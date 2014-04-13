@@ -20,13 +20,13 @@
     <div class="isn-core">
         <header>
             <nav>
-                <ul class="nav">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Core</li>
-                    <li>Team</li>
-                    <li>Fits</li>
-                    <li>Forums</li>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="core">Core</a></li>
+                    <li><a href="team">Team</a></li>
+                    <li><a href="fits">Fits</a></li>
+                    <li><a href="forums">Forums</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +34,7 @@
 
         </section>
         <footer>
-
+            Design by: USER | Developed by: USER USER
         </footer>
     </div>
 </body>
