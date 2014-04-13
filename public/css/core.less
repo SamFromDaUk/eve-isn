@@ -32,12 +32,13 @@ div.isn-core {
             height: 75px;
             line-height: 75px;
             cursor: pointer;
-            margin-right: 5px;
             transition: all 0.3s ease;
 
             a {
                 color: inherit;
                 text-decoration: none;
+                display: block;
+                height: 100%;
             }
 
             &:hover {
@@ -48,7 +49,15 @@ div.isn-core {
     }
 
     section {
-
+        position: absolute;
+        top: 75px;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        overflow-y: auto;
+        background-image: url(../image/bg.jpg);
+        background-color: @blue;
+        background-repeat: no-repeat;
     }
 
     footer {
