@@ -18,7 +18,24 @@
 </head>
 <body>
     <div class="isn-core">
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Core</li>
+                    <li>Team</li>
+                    <li>Fits</li>
+                    <li>Forums</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
 
+        </section>
+        <footer>
+
+        </footer>
     </div>
 </body>
 </html>
