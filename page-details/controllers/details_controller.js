@@ -1,4 +1,4 @@
-ISN.Controller.extend('ISN.Controllers.About', {
+ISN.Controller.extend('ISN.Controllers.Details', {
 
 }, {
     init: function() {
@@ -11,7 +11,6 @@ ISN.Controller.extend('ISN.Controllers.About', {
     },
 
     render: function() {
-        this.element.html(this.view('//page-about/views/about.ejs'));
         this.element.show();
     }
 });

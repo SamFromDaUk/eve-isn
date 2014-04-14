@@ -53,10 +53,14 @@ ISN.Controller.extend('ISN.Controllers.Core', {
         var self = this,
             container = $('<div></div>');
 
+
+        this.elements.content.children().hide();
+
         if (this.loadedPages[page]) {
-            this.elements.content.children('isn_' + page)['isn_' + page]();
+            this.elements.content.children('.isn_' + page)['isn_' + page]();
             return;
         }
+        console.log(page);
 
         steal(
             '//page-' + page + '/page-' + page

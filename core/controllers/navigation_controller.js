@@ -21,14 +21,14 @@ ISN.Controller.extend('ISN.Controllers.Navigation', {
             this.options.change(page);
             this.options.toggleMenu(true);
             this.element.find('li').removeClass('active');
-            this.element.find('.' + page).addClass('active');
+            this.element.find('[data-page="'+ page +'"]').addClass('active');
         } else {
             window.location.hash = '';
         }
     },
 
     'li click': function(el, ev) {
-        var page = el.attr('class');
+        var page = el.attr('data-page');
 
         ev.preventDefault();
 
