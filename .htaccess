@@ -3,7 +3,3 @@ Options +FollowSymLinks
 RewriteEngine On
 
 php_value auto_prepend_file config/config.php
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . index.php

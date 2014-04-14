@@ -1,0 +1,5 @@
+$.Controller.extend('ISN.Controller', {
+
+}, {
+
+});
