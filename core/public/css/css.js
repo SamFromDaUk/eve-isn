@@ -1,3 +1,4 @@
 steal(
-    './core.css'
+    './core.css',
+    './header.css'
 );
