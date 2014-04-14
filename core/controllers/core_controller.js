@@ -1,6 +1,8 @@
 ISN.Controller.extend('ISN.Controllers.Core', {
 
 }, {
+    loadedPages: {},
+
     init: function() {
         var self = this;
 
@@ -48,7 +50,22 @@ ISN.Controller.extend('ISN.Controllers.Core', {
     },
 
     changePage: function(page) {
-        console.log(page);
+        var self = this,
+            container = $('<div></div>');
+
+        if (this.loadedPages[page]) {
+            this.elements.content.children('isn_' + page)['isn_' + page]();
+            return;
+        }
+
+        steal(
+            '//page-' + page + '/page-' + page
+        ).then(function() {
+            self.loadedPages[page] = true;
+            container['isn_' + page]();
+
+            self.elements.content.append(container);
+        });
     },
 
     '.header .nav-status > div click': function(el, ev) {
