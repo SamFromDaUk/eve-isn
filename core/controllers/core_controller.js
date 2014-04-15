@@ -12,14 +12,7 @@ ISN.Controller.extend('ISN.Controllers.Core', {
         this.renderHeader();
         this.renderFooter();
 
-        this.elements.navigation.isn_navigation({
-            change: function(page) {
-                self.changePage(page);
-            },
-            toggleMenu: function(open) {
-                self.toggleMenu(open);
-            }
-        });
+        this.initNav();
     },
 
     renderCoreView: function() {
@@ -47,14 +40,21 @@ ISN.Controller.extend('ISN.Controllers.Core', {
             .addClass(openMenu ? 'open' : 'closed');
 
         this.elements.navigation.css('opacity', openMenu ? 1 : 0);
+
+        if (!openMenu) {
+            this.initNav('landing');
+        }
     },
 
     changePage: function(page) {
         var self = this,
             container = $('<div></div>');
 
-
         this.elements.content.children().hide();
+
+        if (!page) {
+            return;
+        }
 
         if (this.loadedPages[page]) {
             this.elements.content.children('.isn_' + page)['isn_' + page]();
@@ -69,6 +69,20 @@ ISN.Controller.extend('ISN.Controllers.Core', {
             container['isn_' + page]();
 
             self.elements.content.append(container);
+        });
+    },
+
+    initNav: function(page) {
+        var self = this;
+
+        this.elements.navigation.isn_navigation({
+            page: page || null,
+            change: function(page) {
+                self.changePage(page);
+            },
+            toggleMenu: function(open) {
+                self.toggleMenu(open);
+            }
         });
     },
 
