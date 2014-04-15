@@ -37,9 +37,9 @@ ISN.Controller.extend('ISN.Controllers.About', {
         this.elements.changeable.fadeOut(200, function() {
             self.elements.changeable.text(self.isnName[self.nameIndex]);
             self.elements.changeable.fadeIn(200);
+            self.nameIndex++;
         });
 
-        this.nameIndex++;
         setTimeout(function() {
             self.swapIsnName();
         }, 5000);
