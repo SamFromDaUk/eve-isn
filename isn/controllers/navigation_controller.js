@@ -1,6 +1,10 @@
 ISN.Controller.extend('ISN.Controllers.Navigation', {
 
 }, {
+    directLinks: {
+        'forums': 'http://forum.eve-isn.com/'
+    },
+
     init: function(options) {
         this.setNavigationPosition();
     },

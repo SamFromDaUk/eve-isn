@@ -19,7 +19,6 @@ ISN.Controller.extend('ISN.Controllers.About', {
         var self = this;
 
         this.element.html(this.view('//isn/views/about.ejs'));
-        this.element.show();
 
         this.elements.changeable = this.element.find('div.changeable');
 

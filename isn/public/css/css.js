@@ -1,5 +1,7 @@
 steal(
     './core.css',
     './header.css',
-    './about.css'
+    './about.css',
+    './details.css',
+    './team.css'
 );

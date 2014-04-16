@@ -48,22 +48,24 @@ ISN.Controller.extend('ISN.Controllers.Core', {
 
     changePage: function(page) {
         var self = this,
-            container = $('<div></div>');
+            container = $('<div class="fade"></div>');
 
-        this.elements.content.children().hide();
+        this.elements.content.children().removeClass('in');
 
         if (!page) {
             return;
         }
 
         if (this.loadedPages[page]) {
-            this.elements.content.children('.isn_' + page).show()['isn_' + page]();
+            this.elements.content.children('.isn_' + page).addClass('in')['isn_' + page]();
             return;
         }
 
         this.loadedPages[page] = true;
         container['isn_' + page]();
         self.elements.content.append(container);
+        container.addClass('in');
+
     },
 
     initNav: function(page) {
