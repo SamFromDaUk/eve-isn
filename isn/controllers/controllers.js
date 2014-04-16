@@ -1,0 +1,9 @@
+steal(
+    './core_controller.js',
+    './navigation_controller.js',
+    './about_controller.js',
+    './details_controller.js',
+    './team_controller.js',
+    './fits_controller.js',
+    './forums_controller.js'
+);

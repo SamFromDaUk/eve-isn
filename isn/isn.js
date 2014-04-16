@@ -1,0 +1,19 @@
+steal(
+    '//isn/lib/jquery/jquery-1.11.0.js'
+).then(
+    '//isn/lib/bootstrap-3.1.1-dist/js/bootstrap.js',
+    '//isn/lib/bootstrap-3.1.1-dist/css/bootstrap.css'
+).then(
+    'jquery/model/list',
+    'jquery/controller',
+    'jquery/view/ejs'
+).then(
+    '//isn/lib/isn/isn.js'
+).then(
+    '//isn/controllers/controllers.js',
+    '//isn/models/models.js',
+    '//isn/views/views.js',
+    '//isn/public/css/css.js'
+).then(function() {
+    $('div.isn-core').isn_core();
+});

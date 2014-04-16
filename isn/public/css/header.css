@@ -1,0 +1,7 @@
+div.isn-core div.header{text-align:center;background-color:#eaeaea;}div.isn-core div.header .nav-contain{display:inline-block;}div.isn-core div.header .nav-contain .logo{margin-top:10px;}
+div.isn-core div.header .nav-contain .nav-status{width:75px;padding-top:38px;margin-left:30px;height:100px;}div.isn-core div.header .nav-contain .nav-status .nav-closed,div.isn-core div.header .nav-contain .nav-status .nav-open{cursor:pointer;}
+div.isn-core div.header .nav-contain .nav-status .nav-open{margin-top:5px;}
+div.isn-core div.header .nav-contain ul.navigation{margin:0;padding:0;opacity:0;list-style:none;}div.isn-core div.header .nav-contain ul.navigation li{float:left;width:110px;height:100px;line-height:100px;cursor:pointer;}div.isn-core div.header .nav-contain ul.navigation li a{color:#475F79;text-decoration:none;display:block;height:100%;}
+div.isn-core div.header .nav-contain ul.navigation li:hover a,div.isn-core div.header .nav-contain ul.navigation li.active a{color:#EAEAEA;background-color:#475F79;}
+div.isn-core div.header .nav-contain.closed .nav-status .nav-open{display:none;}
+div.isn-core div.header .nav-contain.open .nav-status .nav-closed{display:none;}

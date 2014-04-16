@@ -1,3 +1,0 @@
-steal(
-    './about.css'
-);
