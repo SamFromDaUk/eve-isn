@@ -1,1 +1,4 @@
-div.isn-core div.isn_team .row{margin:100px auto 0 auto;}
+div.isn-core div.isn_team .row{margin:100px auto 0 auto;}div.isn-core div.isn_team .row .picture-bg{height:230px;background-size:contain;background-color:#000;background-repeat:no-repeat;background-position:center center;}div.isn-core div.isn_team .row .picture-bg.boz{background-image:url('../image/BOZL1N.jpg');}
+div.isn-core div.isn_team .row .picture-bg.kod{background-image:url('../image/kodavor.jpg');}
+div.isn-core div.isn_team .row .picture-bg.nob{background-image:url('../image/noble%20ranger.jpg');}
+div.isn-core div.isn_team .row .picture-bg.rel{background-image:url('../image/relic%20amatin.jpg');}
