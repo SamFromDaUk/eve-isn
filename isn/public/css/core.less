@@ -23,6 +23,10 @@ div.isn-core {
             right: 0;
             bottom: 0;
             left: 0;
+
+            &.in {
+                z-index: 2;
+            }
         }
     }
 
@@ -33,6 +37,9 @@ div.isn-core {
         left: 0;
         height: 20px;
         overflow: hidden;
+        font-size: 11px;
+        line-height: 20px;
+        padding: 0 10px;
     }
 
     .shiny-box {
@@ -91,8 +98,14 @@ div.isn-core {
 
             .carousel-indicators {
                 position: absolute;
-                bottom: -30px;
-                left: 28px;
+                bottom: -20px;
+                left: 0px;
+                width: auto;
+                text-align: left;
+                right: 0px;
+                height: 20px;
+                margin: 0;
+                overflow: hidden;
 
                 > li {
                     height: 6px;
@@ -137,12 +150,12 @@ div.isn-core {
             }
 
             .item {
-                margin: 10px;
+                padding: 10px;
                 opacity: 0;
                 transition: 0.3s ease-in-out all;
-                max-height: 210px;
+                max-height: 229px;
                 overflow-y: auto;
-                height: 210px;
+                height: 229px;
 
                 &.active {
                     opacity: 1;
@@ -153,13 +166,18 @@ div.isn-core {
                 }
 
                 .carousel-caption {
-                    padding-bottom: 0px;
+                    padding: 5px;
+                    bottom: 0px;
+                    right: 0;
+                    left: 0;
+                    background: rgba(234, 234, 234, 0.3);
+
                 }
 
                 &.no-margin {
-                    margin: 0;
-                    height: 230px;
-                    max-height: 230px;
+                    padding: 0;
+                    height: 229px;
+                    max-height: 229px;
                 }
             }
         }

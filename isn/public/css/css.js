@@ -3,5 +3,7 @@ steal(
     './header.css',
     './about.css',
     './details.css',
-    './team.css'
+    './team.css',
+    './fits.css',
+    './forums.css'
 );

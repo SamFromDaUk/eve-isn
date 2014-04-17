@@ -3,6 +3,8 @@ ISN.Controller.extend('ISN.Controllers.Fits', {
 }, {
     init: function() {
         this.elements = {};
+
+        this.render();
     },
 
     update: function(options) {
@@ -11,6 +13,6 @@ ISN.Controller.extend('ISN.Controllers.Fits', {
     },
 
     render: function() {
-
+        this.element.html(this.view('//isn/views/fits.ejs'));
     }
 });

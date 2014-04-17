@@ -4,5 +4,7 @@ steal(
     '//isn/views/footer.ejs',
     '//isn/views/about.ejs',
     '//isn/views/details.ejs',
-    '//isn/views/team.ejs'
+    '//isn/views/team.ejs',
+    '//isn/views/fits.ejs',
+    '//isn/views/forums.ejs'
 );
