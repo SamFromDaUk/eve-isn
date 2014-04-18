@@ -46,5 +46,12 @@ ISN.Controller.extend('ISN.Controllers.About', {
         setTimeout(function() {
             self.swapIsnName();
         }, 5000);
+    },
+
+    '.promo li click': function(el, ev) {
+        $.fancybox.open({
+            href: el.attr('data-source'),
+            type: 'iframe'
+        });
     }
 });

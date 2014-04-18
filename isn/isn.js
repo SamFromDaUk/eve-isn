@@ -1,8 +1,10 @@
 steal(
-    '//isn/lib/jquery/jquery-1.11.0.js'
+    'jquery'
 ).then(
     '//isn/lib/bootstrap-3.1.1-dist/js/bootstrap.js',
-    '//isn/lib/bootstrap-3.1.1-dist/css/bootstrap.css'
+    '//isn/lib/bootstrap-3.1.1-dist/css/bootstrap.css',
+    '//isn/lib/fancyapps-fancyBox-18d1712/source/jquery.fancybox.js',
+    '//isn/lib/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css'
 ).then(
     'jquery/model/list',
     'jquery/controller',

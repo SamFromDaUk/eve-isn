@@ -16,6 +16,9 @@ div.isn-core {
         left: 0px;
         overflow-y: auto;
         background-image: url('../image/bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000;
 
         > div {
             position: absolute;
@@ -163,6 +166,12 @@ div.isn-core {
 
                 p.title {
                     color: #eaeaea;
+                }
+
+                &.next,
+                &.left {
+                    opacity: 0;
+                    left: 0%;
                 }
 
                 .carousel-caption {

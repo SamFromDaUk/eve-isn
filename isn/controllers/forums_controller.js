@@ -15,7 +15,7 @@ ISN.Controller.extend('ISN.Controllers.Forums', {
         this.element.html(this.view('//isn/views/forums.ejs'));
     },
 
-    '.launch-forums click': function(el, ev) {
+    '.btn.btn-success click': function(el, ev) {
         window.open('http://forum.eve-isn.com/');
     }
 });
