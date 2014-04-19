@@ -11,6 +11,6 @@ div.isn-core .shiny-box .carousel .carousel-actions>div{position:absolute;top:-6
 div.isn-core .shiny-box .carousel .carousel-actions>div.next{right:0;background-image:url("../image/right-arrow.png");}div.isn-core .shiny-box .carousel .carousel-actions>div.next:hover{background-image:url("../image/right-arrow-active.png");}
 div.isn-core .shiny-box .carousel .item{padding:10px;opacity:0;transition:0.3s ease-in-out all;max-height:229px;overflow-y:auto;height:229px;}div.isn-core .shiny-box .carousel .item.active{opacity:1;}
 div.isn-core .shiny-box .carousel .item p.title{color:#eaeaea;}
-div.isn-core .shiny-box .carousel .item.next,div.isn-core .shiny-box .carousel .item.left{opacity:0;left:0%;}
+div.isn-core .shiny-box .carousel .item.next,div.isn-core .shiny-box .carousel .item.left,div.isn-core .shiny-box .carousel .item.right{opacity:0;left:0%;}
 div.isn-core .shiny-box .carousel .item .carousel-caption{padding:5px;bottom:0px;right:0;left:0;background:rgba(234, 234, 234, 0.3);}
 div.isn-core .shiny-box .carousel .item.no-margin{padding:0;height:229px;max-height:229px;}
